@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Basics: Starting with GitHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-6 text-center text-blue-600">Git Basics: Starting with the Mercury Github</h1>
+
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Initial Setup</h2>
+            <p class="mb-4">Clone the repository to your local machine:</p>
+            <pre class="bg-gray-100 p-2 rounded"><code>git clone https://github.com/SoftwareBozos/MercuryRobotics.git</code></pre>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">1. Grab Latest Github Changes</h2>
+            <p class="mb-4">Check for changes:</p>
+            <pre class="bg-gray-100 p-2 rounded"><code>git pull origin main</code></pre>
+            <p class="mt-2">This replaces all changed files on your system with the new ones from Github</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">2. Make Changes</h2>
+            <p class="mb-4">Edit files in your local repository</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">3. Double Check Changes</h2>
+            <p class="mb-4">Check for changes:</p>
+            <pre class="bg-gray-100 p-2 rounded"><code>git status</code></pre>
+            <p class="mt-2">This stages all changes. To stage specific files, replace '.' with file names.</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">4. Stage Changes</h2>
+            <p class="mb-4">Stage your changes:</p>
+            <pre class="bg-gray-100 p-2 rounded"><code>git add .</code></pre>
+            <p class="mt-2">This stages all changes. To stage specific files, replace '.' with file names. Also you can use '-A' instead of '.' to add all changed files.</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">5. Commit Changes</h2>
+            <p class="mb-4">Commit your staged changes:</p>
+            <pre class="bg-gray-100 p-2 rounded"><code>git commit -m "Your commit message here"</code></pre>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">6. Push Changes</h2>
+            <p class="mb-4">Push your commits to GitHub:</p>
+            <pre class="bg-gray-100 p-2 rounded"><code>git push origin main</code></pre>
+            <p class="mt-2">Replace 'main' with your branch name if the branch you are on is different.</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4">Additional Git Commands</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li><code class="bg-gray-100 px-1">git pull</code>: Update your local repository with changes from GitHub</li>
+                <li><code class="bg-gray-100 px-1">git branch</code>: List, create, or delete branches</li>
+                <li><code class="bg-gray-100 px-1">git checkout</code>: Switch branches or restore files</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
